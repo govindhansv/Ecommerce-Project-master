@@ -1,13 +1,13 @@
 const express = require("express");
 const router = express.Router();
-// const productsController = require("../controllers/products-controller");
+const userController = require("../controllers/users-controller");
 
-// router.get("/", productsController.getAllProducts);
-// router.get('/add', productsController.getProductAddform);
-// router.post("/add", productsController.addProduct);
-// router.get('/edit/:id', productsController.getProductEditform);
-// router.post("/edit", productsController.editProduct);
-// router.get('/:id', productsController.getProductById);
-// router.get("/delete/:id", productsController.deleteProduct);
+router.get("/", userController.getHome);
+// router.get('/add', userController.getProductAddform);
+// router.post("/add", userController.addProduct);
+// router.get('/edit/:id', userController.getProductEditform);
+// router.post("/edit", userController.editProduct);
+// router.get('/:id', userController.getProductById);
+// router.get("/delete/:id", userController.deleteProduct);
 
 module.exports = router;

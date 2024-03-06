@@ -23,6 +23,10 @@ var ownersRouter = require('./routes/owners');
 var adminRouter = require('./routes/admin');
 var authsRouter = require('./routes/auths');
 
+app.get('/',(req,res)=>{ 
+  console.log(' hell yeah!. Here we go again');
+  res.send('user/signmup');
+})
 
 // db connection
 db.connect()
@@ -45,10 +49,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/owners', ownersRouter);
-app.use('/admin', adminRouter);
-app.use('/auths', authsRouter);
+// app.use('/users', usersRouter);
+// app.use('/owners', ownersRouter);
+// app.use('/admin', adminRouter);
+// app.use('/auths', authsRouter);
 
 
 // creating 24 hours from milliseconds
