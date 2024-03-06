@@ -3,7 +3,7 @@
 
 const getHome = async function(req, res) {
     // res.render('forms/signup')
-    res.send('forms/signup');
+    res.render('home');
 }
 
 exports.getHome = getHome;

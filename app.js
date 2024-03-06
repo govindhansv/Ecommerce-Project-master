@@ -23,10 +23,10 @@ var ownersRouter = require('./routes/owners');
 var adminRouter = require('./routes/admin');
 var authsRouter = require('./routes/auths');
 
-app.get('/',(req,res)=>{ 
-  console.log(' hell yeah!. Here we go again');
-  res.send('user/signmup');
-})
+// app.get('/',(req,res)=>{ 
+//   console.log(' hell yeah!. Here we go again');
+//   res.send('user/signmup');
+// })
 
 // db connection
 db.connect()
